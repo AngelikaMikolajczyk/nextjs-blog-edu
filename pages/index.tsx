@@ -37,6 +37,9 @@ export default function Home({ allPostsData }: HomeProps) {
             </section>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
                 <h2 className={utilStyles.headingLg}>Blog</h2>
+                <Link href="/posts">All posts</Link>
+                <br />
+                <hr />
                 <ul className={utilStyles.list}>
                     {allPostsData.map(({ id, date, title }) => (
                         <li className={utilStyles.listItem} key={id}>
